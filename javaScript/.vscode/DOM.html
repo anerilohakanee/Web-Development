@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM</title>
+</head>
+<body>
+
+    <h1 id="test">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, qui consequuntur. Ea itaque vitae praesentium totam minima? Aspernatur nostrum quo rem saepe fuga. Accusamus ipsum explicabo voluptatum architecto quod iste.</h1>
+    <h1 id>Lorem ipsum dolor, sit amet</h1>
+    <h1 id class="test">Lorem ipsum dolor, sit amet</h1>
+    <h1 id class="test">Lorem ipsum dolor, sit amet</h1>
+    <h1 class="test">Heading 1</h1>
+    <h1 class="test">Heading 2</h1>
+
+    <img id = "cat" src="" alt="IMG">
+    <script>
+
+        let firstElement = document.getElementsByClassName("test")[0];
+
+        document.getElementById("test").innerHTML = "Core2Web";
+        console.log(document.getElementById("test"));
+        
+        document.getElementsByTagName("h1"[0]).innerHTML = "Core2Web";;
+        console.log(document.getElementsByTagName("h1"[0]));
+
+        document.getElementsByClassName("test").innerHTML = "Hello Class"
+        console.log(document.getElementsByTagName("h1"[3]));
+
+        document.getElementsByClassName("test")[5].align = "center";
+
+        document.getElementById("cat").src = "https://miro.medium.com/v2/resize:fit:1000/1*Zt2K7-hQmnCeNSfXw3_oJA.png";
+
+       // document.getElementById("cat").setAttribute("src","https://miro.medium.com/v2/resize:fit:1000/1*Zt2K7-hQmnCeNSfXw3_oJA.png");
+
+        firstElement.style.color = "red";
+        firstElement.style.backgroundColor = "aqua";
+
+        document.getElementById("cat").style.borderRadius = "10px";
+
+    </script>
+    
+</body>
+</html>

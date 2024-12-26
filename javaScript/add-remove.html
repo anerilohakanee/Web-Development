@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <p id = "test">Paragraph</p>
+
+    <script>
+
+        //Creating new h2 element
+        let h2 = document.createElement('h2');
+        h2.innerHTML = "Hello Hello";
+        document.body.appendChild(h2);
+
+        //Removing Paragraph element
+        let p = document.getElementById('test');
+        document.body.removeChild(p);
+
+        //Replacing element with another element
+        let hello = document.getElementById('hello');
+        let h3 = document.createElement('h3');
+        h3.innerHTML = "Hello Hello Hello";
+        document.body.replaceChild(h2, hello);
+
+        //Query Selector
+        let querySelector = document.querySelectorAll('h1');
+
+    </script>
+</body>
+</html>

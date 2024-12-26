@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Combinator Selector</title>
+    <style>
+
+        div>p>span{
+            background-color:blueviolet;
+            color: white;
+        }
+        div ~ span{
+            color:red;
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <div>
+        <p>
+            1.Lorem <spnan>ipsum dolor</span> sit amet
+        </p>
+    </div>
+
+    <span>2.Lorem ipsum dolor sit amet</span><br>
+    <span>3.Lorem ipsum dolor sit amet</span><br>
+    <span>4.Lorem ipsum dolor sit amet</span><br>
+</body>
+
+</html>
